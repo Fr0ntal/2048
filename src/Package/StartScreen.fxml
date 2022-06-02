@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="393.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Package.ControllerStart">
+    <children>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="191.0" layoutY="177.0" onMouseClicked="#startGame" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/start.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="320.0" layoutX="210.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/logo.png" />
+            </image>
+        </ImageView>
+        <ComboBox fx:id="comboBoxXCells" layoutX="20.0" layoutY="93.0" prefHeight="80.0" prefWidth="80.0" promptText="X" />
+        <ComboBox fx:id="comboBoxYCells" layoutX="109.0" layoutY="93.0" prefHeight="80.0" prefWidth="80.0" promptText="Y" />
+        <ComboBox fx:id="comboBoxWinCase" layoutX="379.0" layoutY="104.0" prefHeight="58.0" prefWidth="167.0" promptText="Выигрышная ячейка" />
+    </children>
+</AnchorPane>

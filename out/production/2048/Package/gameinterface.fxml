@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#keyboardPress" prefHeight="393.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Package.Controller">
+    <children>
+        <FlowPane fx:id="flowPane" hgap="5.0" onKeyPressed="#keyboardPress" prefHeight="393.0" prefWidth="369.0" vgap="5.0" />
+        <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="500.0" layoutY="250.0" onMouseClicked="#right" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/right.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="440.0" layoutY="190.0" onMouseClicked="#up" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/up.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="380.0" layoutY="250.0" onMouseClicked="#left" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/left.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="440.0" layoutY="310.0" onMouseClicked="#down" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/down.png" />
+            </image>
+        </ImageView>
+        <Text layoutX="423.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2048" wrappingWidth="93.22900390625">
+            <font>
+                <Font size="36.0" />
+            </font>
+            <fill>
+                <RadialGradient centerX="0.5392156862745098" centerY="0.42805755395683454" focusAngle="39.56" focusDistance="-0.023668639053254448" radius="0.7633136094674556">
+                    <stops>
+                        <Stop color="#b0752a" />
+                        <Stop color="#ffaf54" offset="1.0" />
+                    </stops>
+                </RadialGradient>
+            </fill>
+        </Text>
+        <ImageView fitHeight="65.0" fitWidth="65.0" layoutX="490.0" layoutY="13.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/exit.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
